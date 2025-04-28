@@ -1,0 +1,25 @@
+@use "../general/" as g;
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .logo-con {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 2.4rem;
+    h2 {
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      color: g.$fontColor;
+      margin-bottom: -0.6rem;
+      span {
+        background: g.$gradient-vertical;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+  }
+}

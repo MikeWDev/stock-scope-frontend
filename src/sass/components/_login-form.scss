@@ -1,0 +1,11 @@
+@use "../general/" as g;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  width: 100%;
+  .btn {
+    margin-top: 1rem;
+  }
+}

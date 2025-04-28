@@ -1,0 +1,18 @@
+@use "../general/" as g;
+.stats {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  .btn-con {
+    display: flex;
+    flex-direction: row;
+    gap: 3.2rem;
+    .btn {
+      padding: 1rem;
+    }
+  }
+  h1 {
+    color: g.$fontColor;
+  }
+}

@@ -1,0 +1,70 @@
+@use "../general/" as g;
+
+.alerts {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+
+  h1 {
+    color: g.$fontColor;
+  }
+
+  .row {
+    &:hover {
+      background: transparent;
+      cursor: default;
+    }
+
+    .delete-action {
+      padding: 4px;
+      background: rgba(242, 115, 98, 0.2);
+      border-radius: 4px;
+      width: fit-content;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+
+      &.loading {
+        pointer-events: none;
+
+        svg {
+          opacity: 0;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -150%;
+          width: 200%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(242, 115, 98, 0.2) 0%,
+            rgba(242, 115, 98, 0.4) 50%,
+            rgba(242, 115, 98, 0.2) 100%
+          );
+          animation: shimmer 1.5s infinite;
+        }
+      }
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

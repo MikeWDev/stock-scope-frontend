@@ -1,0 +1,63 @@
+@use "./variables" as g;
+@use "./mixins" as m;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: g.$bgColor;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container,
+section {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+input {
+  height: 4rem;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  color: #2d2d2d;
+  padding: 0 1.6rem;
+  &::placeholder {
+    color: g.$fontLight;
+    opacity: 1;
+  }
+}
+.gradient-border {
+  background: g.$gradient-vertical;
+  padding: 1px;
+  border-radius: 20px;
+  width: fit-content;
+}

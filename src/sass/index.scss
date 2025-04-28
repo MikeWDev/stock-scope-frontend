@@ -1,0 +1,19 @@
+@use "./general";
+//Components
+@use "./components/navbar";
+@use "./components/login-form";
+@use "./components/button";
+@use "./components/side-bar";
+@use "./components/action-button";
+@use "./components/table";
+@use "./components/stock-card";
+@use "./components/stock-graph";
+@use "./components/set-alert-box";
+@use "./components/loading-scheleton";
+
+//Pages
+@use "./pages/auth-page";
+@use "./pages/dashboard-page";
+@use "./pages/my-alerts";
+@use "./pages/stock-preview";
+@use "./pages/my-stats";

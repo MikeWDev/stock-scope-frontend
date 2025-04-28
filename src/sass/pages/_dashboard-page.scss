@@ -1,0 +1,17 @@
+@use "../general/" as g;
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+  .dashboard {
+    padding: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.2rem;
+
+    h1 {
+      color: g.$fontColor;
+    }
+  }
+}

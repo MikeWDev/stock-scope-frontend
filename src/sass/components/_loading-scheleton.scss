@@ -1,0 +1,60 @@
+.skeleton-box {
+  background: #32323d;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  width: 10.9rem;
+  height: 1.7rem;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(
+      90deg,
+      rgba(50, 50, 61, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(50, 50, 61, 0) 100%
+    );
+    animation: shimmer 1.5s infinite;
+  }
+  &.graph {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.skeleton-box.stock-card {
+  width: 10.6rem;
+  height: 2.8rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    height: 100%;
+    width: 150%;
+    background: linear-gradient(
+      90deg,
+      rgba(50, 50, 61, 0) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(50, 50, 61, 0) 100%
+    );
+    animation: shimmer 1.5s infinite;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -150%;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
+  }
+}

@@ -1,0 +1,11 @@
+@use "../general/" as g;
+.stock-preview {
+  padding: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  .stock-data-con {
+    display: flex;
+    justify-content: space-between;
+  }
+}

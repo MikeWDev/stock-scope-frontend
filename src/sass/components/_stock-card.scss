@@ -1,0 +1,65 @@
+@use "../general/" as g;
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  padding: 2.4rem;
+  background-color: g.$accentBg;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 17px;
+  .label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    p {
+      font-size: 1.6rem;
+      color: g.$fontLight;
+      font-weight: 400;
+    }
+    .icon {
+      padding: 0.8rem;
+
+      width: fit-content;
+      border-radius: 8px;
+      &.name {
+        background-color: rgba(54, 121, 245, 0.2);
+        svg {
+          color: g.$primary;
+        }
+      }
+      &.symbol {
+        background-color: hsla(277, 92%, 53%, 0.2);
+        svg {
+          color: g.$secondary;
+        }
+      }
+      &.price {
+        background-color: rgba(156, 75, 248, 0.2);
+        svg {
+          color: g.$tertiary;
+        }
+      }
+      &.change {
+        &.up {
+          background-color: rgba(92, 213, 154, 0.2);
+          svg {
+            color: g.$success;
+          }
+        }
+        &.down {
+          background-color: rgba(242, 115, 98, 0.2);
+          svg {
+            color: g.$error;
+          }
+        }
+      }
+    }
+  }
+  .value {
+    font-size: 2.4rem;
+    color: g.$fontColor;
+  }
+}

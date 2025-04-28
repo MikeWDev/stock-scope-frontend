@@ -1,0 +1,56 @@
+@use "../general/" as g;
+.set-alert {
+  max-width: 32rem;
+  padding: 2rem;
+  background-color: g.$accentBg;
+  border-radius: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  .direction-select {
+    display: flex;
+    gap: 1rem;
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 1.4rem;
+      color: g.$fontColor;
+      input {
+        accent-color: g.$tertiary;
+        width: 1.2rem;
+        height: 1.2rem;
+        cursor: pointer;
+      }
+    }
+  }
+  .btn-wrapper {
+    align-self: flex-start;
+  }
+  .heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.2rem;
+    .icon {
+      color: g.$error;
+      padding: 1rem;
+      background-color: rgba(242, 115, 98, 0.2);
+      border-radius: 8px;
+    }
+    p {
+      color: g.$fontLight;
+      font-size: 1.6rem;
+    }
+  }
+  form {
+    .btn {
+      margin: 0;
+    }
+    input {
+      background-color: g.$bgColor;
+      color: g.$fontColor;
+    }
+  }
+}
