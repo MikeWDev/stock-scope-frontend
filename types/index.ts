@@ -1,3 +1,4 @@
+// types
 export interface Stock {
   name: string;
   symbol: string;
